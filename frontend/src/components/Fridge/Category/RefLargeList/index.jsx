@@ -34,7 +34,7 @@ const RefLargeList = (props) => {
       <Grid container>
         {data.map((dt, idx) => {
           return (
-            <Grid item key={idx} dt={dt} xs={4} lg={3} spacing={3} className={classes.MainGrid}>
+            <Grid item key={idx} dt={dt} xs={12} sm={6} md={4} lg={3} spacing={2} className={classes.MainGrid}>
               <RefLargeItem dt={dt} idx={idx} data={data} setMain={setMain.bind()} />
             </Grid>
           );
